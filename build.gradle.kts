@@ -34,6 +34,7 @@ dependencies {
     paperweight.paperDevBundle(libs.versions.paper.get())
     implementation(libs.modulemanager.spigot)
     implementation(libs.commandlib.paper)
+    implementation(libs.bstats.bukkit)
 
     testImplementation(platform(libs.junit.bom))
     testImplementation(libs.junit.jupiter)
@@ -59,6 +60,7 @@ tasks.shadowJar {
     archiveFileName = "leafitbe.jar"
     relocate("com.jazzkuh.modulemanager", "dev.outfoxed.leafitbe.libs.modulemanager")
     relocate("com.jazzkuh.commandlib", "dev.outfoxed.leafitbe.libs.commandlib")
+    relocate("org.bstats", "dev.outfoxed.leafitbe.libs.bstats")
 
     // Paper provides these at runtime.
     exclude("net/kyori/**", "org/slf4j/**", "javax/**", "org/jetbrains/**", "org/intellij/**", "org/jspecify/**")
