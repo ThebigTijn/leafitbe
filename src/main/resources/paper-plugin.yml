@@ -1,0 +1,6 @@
+name: Leafitbe
+version: '${version}'
+main: dev.outfoxed.leafitbe.LeafitbePlugin
+api-version: '26.2'
+description: Fast, configurable leaf decay. Cut down a tree and its leaves are gone in seconds.
+authors: [ ThebigTijn ]

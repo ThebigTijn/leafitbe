@@ -1,0 +1,22 @@
+# How far a leaf can be from a log before it decays, in leaf steps. Vanilla is 6, the most is 16.
+# Below 6, leaves that are already in the world only update when something nearby breaks (fast decay below).
+max-distance: 6
+
+# Leaves that only touch at an edge or corner count as connected. Vanilla needs a shared face.
+diagonal: true
+
+decay:
+  # Set to false and leaves never decay.
+  enabled: true
+  # Drop saplings, sticks and apples like vanilla.
+  drops: true
+  # Show break particles and play the break sound.
+  effects: true
+
+  # Without fast decay, leaves wait for random ticks, which is about a minute per leaf on default settings.
+  fast:
+    # Check nearby leaves straight away when a log or leaf is broken, burned or blown up.
+    enabled: true
+    # Each leaf waits a random number of ticks between these before it decays. 20 ticks is 1 second.
+    min-delay: 4
+    max-delay: 12

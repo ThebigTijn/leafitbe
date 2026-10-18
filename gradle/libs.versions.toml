@@ -1,0 +1,19 @@
+[versions]
+lombok = "1.18.46"
+# paper-api and the paperweight dev bundle use the same build.
+paper = "26.2.build.123-stable"
+modulemanager = "2.0-SNAPSHOT"
+commandlib = "2.0-SNAPSHOT"
+
+[libraries]
+modulemanager-spigot = { module = "com.jazzkuh.modulemanager:spigot", version.ref = "modulemanager" }
+commandlib-paper = { module = "com.jazzkuh.commandlib:paper", version.ref = "commandlib" }
+junit-bom = { module = "org.junit:junit-bom", version = "6.1.3" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+[plugins]
+lombok = { id = "io.freefair.lombok", version = "8.13.1" }
+shadow = { id = "com.gradleup.shadow", version = "9.0.2" }
+paperweight = { id = "io.papermc.paperweight.userdev", version = "2.0.0-beta.24" }
+run-paper = { id = "xyz.jpenilla.run-paper", version = "3.1.0" }
