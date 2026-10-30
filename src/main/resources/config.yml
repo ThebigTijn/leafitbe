@@ -5,6 +5,10 @@ max-distance: 6
 # Leaves that only touch at an edge or corner count as connected. Vanilla needs a shared face.
 diagonal: true
 
+# Leaves kept by the rules above are skipped for this many minutes before they are searched again. 0 searches every time.
+# Fast decay ignores this. Leaves left floating by pistons, /setblock or WorldEdit can wait this long to decay.
+supported-cache-minutes: 10
+
 decay:
   # Set to false and leaves never decay.
   enabled: true
